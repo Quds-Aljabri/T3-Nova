@@ -10,10 +10,19 @@ operator = input("Enter the operator  : ")
 
 if  operator == "+":
     result = num1 + num2
+
 elif operator == "-":
     result = num1 - num2
 
-if  operator == "*":
+elif  operator == "*":
     result = num1 * num2
+
+elif  operator == "fac":
+   answer = 1
+   limit = num1
+   while limit > 0:
+       answer = answer * limit
+       limit = limit - 1
+       result = answer
 
 print(result)
