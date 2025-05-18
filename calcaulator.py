@@ -1,3 +1,5 @@
+import random
+
 num1 = 0
 num2 = 0
 operator = " "
@@ -13,9 +15,6 @@ if  operator == "+":
 
 elif operator == "-":
     result = num1 - num2
-elif operator == "*":
-    result == num1 * num2
-
 
 elif  operator == "*":
     result = num1 * num2
@@ -30,5 +29,13 @@ elif  operator == "fac":
        answer = answer * limit
        limit = limit - 1
        result = answer
+
+elif operator == "abs":
+    result = abs(num1), abs(num2)
+
+elif operator == "random":
+    result = random.randrange(num1, num2)
+
+
 
 print(result)
